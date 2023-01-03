@@ -1,0 +1,22 @@
+<?php
+define("DS",DIRECTORY_SEPARATOR);
+define("BIG_PATH",dirname(__DIR__));
+define("ROOT",BIG_PATH.DS);
+define("APP",ROOT.DS."app".DS);
+define("CORE",APP.DS."core".DS);
+define("Controllers",APP.DS."Controllers".DS);
+define("Models",APP.DS."Models".DS);
+define("Views",APP.DS."Views".DS);
+define("PUBLIC",ROOT.DS."public".DS);
+define("VENDOR",BIG_PATH.DS."vendor".DS);
+// $url=explode("/",$_SERVER['QUERY_STRING']);
+// echo"<pre>";
+// print_r($url);
+define("DSN","mysql:host=localhost;dbname=cms");
+define("DB_USER","root");
+define("DB_PASS","");
+define("DOMAIN",ROOT.DS);
+define('CSS_PATH','http://localhost/LMS/public'.DS);
+// echo CSS_PATH;die;
+require VENDOR."autoload.php";
+$ure=new MVC\core\APP();

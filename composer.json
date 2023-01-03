@@ -1,0 +1,16 @@
+{
+    "name": "mvc/framwork",
+    "description": "mvc practice",
+    "license": "mit",
+    "type": "framwork",
+    
+    "autoload": {
+        "psr-4": {
+            "MVC\\":"app"
+
+        }
+    },
+    "require": {
+        "wixel/gump": "^1.11"
+    }
+}
